@@ -54,7 +54,17 @@
     <div id="poem"></div>
     <!-- script -->
     <script>
-      const article = `Government officials were warned repeatedly about making misleading claims about job figures before the official statistics watchdog reprimanded Boris Johnson over the matter. Ed Humpherson, the director general of the UK Statistics Authority (UKSA), said there had been “a series of informal discussions” before the regulator took the “unusual” step of issuing public rebukes to No 10 over the same issue twice last month. During more than half a dozen editions of prime minister’s questions since November, Johnson has made the misleading claim that more people are in employment in the UK than before the pandemic began. Yet, although the numbers of workers on payrolls has risen, the number of self-employed people has dropped significantly so that the total number of people in work is down by 600,000. The chair of the UKSA, Sir David Norgrove, wrote to Johnson saying he was making “a selective use of data” and added that “public trust requires a complete statement”.`;
+      const article = `Last week’s spill rate reached 315 gigalitres a day – it reached 450GL a day day during the March 2021 floods.
+
+Warragamba collected 46mm of rain in the 24 hours to 9am Monday, McDowell said. It may get another 100-200mm “broadly across that area” before the east coast low weakens and moves away from the coast, probably on Tuesday going into Wednesday.
+
+Sydney and surrounds were forecast to have two more days of heavy rain, with falls approaching or exceeding 100mm possible.
+
+Flood evacuation warnings were in place for Wisemans Ferry, Picton’s central business district and parts of the Hawkesbury-Nepean River.
+
+Wollongong to the south of Sydney may collect even more rainfall. Lake Illawarra was another of the areas under an evacuation warning.
+
+It will still be breezy on Wednesday before clear skies return, potentially breaking a run of rainy days for Sydney that began on 21 February.`;
       const button = document.getElementById("new-poem");
       function shuffleWords(list) {
         return list
@@ -76,7 +86,7 @@
       function assemblePoem(articleWords) {
         let lineText = "";
         for (const [counter, word] of articleWords.entries()) {
-          if ((counter + 1) % 5 == 0) {
+          if ((counter + 1) % 3 == 0) {
             addLine(lineText);
             lineText = "";
           } else {
